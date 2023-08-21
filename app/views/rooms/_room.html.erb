@@ -1,0 +1,29 @@
+ <%#= link_to room.name, room %> 
+<!-- <div class="contacts-outter"> -->
+ <ul class="list-unstyled contacts">
+ 	<%# @users.each do |user| %>
+ 	
+		<li data-toggle="tab" data-target="#inbox-message-1" id="agent_id"  class="active">
+			<div class="message-count"> 1 </div>
+
+			<a href="/rooms/<%#= rooms__redirect(user.id)%>">rooms</a>
+			<%# if user.profile.present? %>
+				<%#= image_tag user&.profile&.profile_image, class:"img-circle medium-image" %>
+			<%# else %>
+				<img alt class="img-circle medium-image" src="https://bootdey.com/img/Content/avatar/avatar1.png">
+			<%# end %>
+			<div class="vcentered info-combo">
+			<h3 class="no-margin-bottom name"><%#= user.profile.name.capitalize %> sourbah</h3>
+			<h5> Hah, too late, I already bought it and my team is impleting the new design right now.</h5>
+			</div>
+			<div class="contacts-add">
+				<%# if user.messages.present? %>
+			<span class="message-time"> <%#= user&.messages&.last&.created_at.strftime("%I:%M %p") %> 12:12<sup>AM</sup></span>
+			<%# end %>
+			<i class="fa fa-trash-o"></i>
+			<i class="fa fa-paperclip"></i>
+			</div>
+		</li>
+	<%# end %>
+ </ul>
+<!-- </div> -->
